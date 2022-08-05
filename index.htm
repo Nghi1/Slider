@@ -25,5 +25,28 @@
             </div>
     </div>
     <script src="script.js"></script>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+        var toggle=counter; 
+        if(toggle=1){
+             toggle=toggleBtn1();
+        }
+        else if(toggle=2){
+             toggle=toggleBtn2();
+        }
+        else if(toggle=3){
+             toggle=toggleBtn3();
+        }
+        else if(toggle=4){
+             toggle=toggleBtn4();
+        }
+            document.getElementById('btn'+counter).clicked= toggle;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },5000);
+    </script>
 </body>
 </html>
