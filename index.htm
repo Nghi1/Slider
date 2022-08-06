@@ -28,21 +28,18 @@
     <script type="text/javascript">
         var counter=1;
         setInterval(function(){
-        var toggle=counter; 
-        if(toggle=1){
-             toggle=toggleBtn1();
-        }
-        else if(toggle=2){
-             toggle=toggleBtn2();
-        }
-        else if(toggle=3){
-             toggle=toggleBtn3();
-        }
-        else if(toggle=4){
-             toggle=toggleBtn4();
-        }
+            var toggle=toggleBtn1();
             document.getElementById('btn'+counter).clicked= toggle;
             counter++;
+            if(counter==2){
+                toggle=toggleBtn2();
+            }
+            if(counter==3){
+                toggle=toggleBtn3();
+            }
+            if(counter==4){
+                toggle=toggleBtn4();
+            }
             if(counter>4){
                 counter=1;
             }
