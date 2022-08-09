@@ -24,6 +24,14 @@
             <button onclick="toggleBtn4()" id="btn4"></button>
             </div>
     </div>
+    <script>
+        let tb=false;
+        const ms=setInterval(()=>{
+             document.title=tb
+            ?"Slider | Page":"(1) Have a message!!",
+            tb=!tb
+        },1000);
+    </script>
     <script src="script.js"></script>
     <script type="text/javascript">
         var counter=1;
